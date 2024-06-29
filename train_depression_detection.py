@@ -16,7 +16,7 @@ def get_data(use_your_own_data=False, dataset_path=None):
         dataset = load_dataset("ShreyaR/DepressionDetection")
     return dataset
 
-
+# TDDO: add random sampling for training data for testing
 def prepare_data(dataset):
     texts = dataset["clean_text"]
     labels = dataset["is_depression"]
